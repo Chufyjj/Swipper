@@ -28,7 +28,7 @@ public class SeekView {
         view = inflater.inflate(R.layout.custom_seekview, null);
         view.getBackground().setAlpha(100);
         textView=(TextView)view.findViewById(R.id.textView3);
-        Typeface.createFromAsset(context.getAssets(),"DroidSans-Bold.ttf");
+        textView.setTypeface(Typeface.createFromAsset(context.getAssets(),"DroidSans-Bold.ttf"));
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
         params.leftMargin = 100;
         params.bottomMargin = 10;
